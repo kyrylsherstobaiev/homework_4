@@ -32,6 +32,6 @@ for (i = 0; i < summerSports.length; i++) {
 }
 
 console.log("***Fruits***")
-for (i = 0; i < fruits.length; i++) {
-	console.log(fruits[i].join(": "));
-}
+for (let fruit of fruits)
+	console.log(fruit.join(": "));
+
