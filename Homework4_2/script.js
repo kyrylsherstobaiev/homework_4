@@ -18,17 +18,15 @@ let summerSports = sports.slice(5, 12);
 
 let fruit = [...winterSports.splice(2, 1), ...summerSports.splice(2, 2)];
 
-console.log("***WinterSports***")
-for (i = 0; i < winterSports.length; i++) {
-	console.log(winterSports[i].join(": "));
+
+function view(array, tittle) {
+	console.log(`****${tittle}****`);
+	for (let i = 0; i < array.length; i++) {
+		console.log(array[i].join(': '));
+	}
 }
 
-console.log("***SummerSports***")
-for (i = 0; i < summerSports.length; i++) {
-	console.log(summerSports[i].join(": "));
-}
-
-console.log("***Fruits***")
-for (let item of fruit)
-	console.log(item.join(": "));
+view(winterSports, "Winter Sports");
+view(summerSports, "Summer Sports");
+view(fruit, "Fruits");
 
